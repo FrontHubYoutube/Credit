@@ -5,7 +5,6 @@ const slides = document.querySelectorAll('.review .row .slider-container .slide'
 const prevSlide = document.querySelector('#prev');
 const nextSlide = document.querySelector('#next');
 
-let index = 0;
 menuBtn.onclick = () => {
     menuBtn.classList.toggle('fa-x');
     navbar.classList.toggle('active');
@@ -22,6 +21,7 @@ window.onscroll =() => {
         header.classList.remove('active');
     }
 }
+let index = 0;
 
 function next() {
     slides[index].classList.remove('active');
